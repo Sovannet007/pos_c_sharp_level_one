@@ -106,6 +106,7 @@
             this.btnNew.TabIndex = 13;
             this.btnNew.Text = "New";
             this.btnNew.UseVisualStyleBackColor = true;
+            this.btnNew.Click += new System.EventHandler(this.btnNew_Click);
             // 
             // dgvStaff
             // 
@@ -117,6 +118,7 @@
             this.dgvStaff.Size = new System.Drawing.Size(882, 470);
             this.dgvStaff.TabIndex = 10;
             this.dgvStaff.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvStaff_CellClick);
+            this.dgvStaff.CellFormatting += new System.Windows.Forms.DataGridViewCellFormattingEventHandler(this.dgvStaff_CellFormatting);
             // 
             // label3
             // 

@@ -44,7 +44,7 @@ namespace POS_LEVEL_01.Service
                 staff.last_name = dr["last_name"].ToString();
                 staff.email = dr["email"].ToString();
                 staff.phone = dr["phone"].ToString();
-                staff.active=dr["active"].ToString() == "1" ? "Active" : "Inactive";
+                staff.active = Convert.ToInt16(dr["active"].ToString());
                 staff.store_name = dr["store_name"].ToString();
                 staff.manager_name = dr["manager_name"].ToString();
 
@@ -117,12 +117,12 @@ namespace POS_LEVEL_01.Service
             SqlCommand cmd = GetConnection().CreateCommand();
             cmd.CommandText = "SP_UPDATE_STAFF";
             cmd.CommandType = System.Data.CommandType.StoredProcedure;
-            cmd.Parameters.AddWithValue("@staff_id ", request.staff_id);
-            cmd.Parameters.AddWithValue("@first_name ", request.first_name);
-            cmd.Parameters.AddWithValue("@last_name ", request.last_name);
-            cmd.Parameters.AddWithValue("@email ", request.email);
-            cmd.Parameters.AddWithValue("@phone ", request.phone);
-            cmd.Parameters.AddWithValue("@active ",Convert.ToInt16(request.active));
+            cmd.Parameters.AddWithValue("@staff_id", request.staff_id);
+            cmd.Parameters.AddWithValue("@first_name", request.first_name);
+            cmd.Parameters.AddWithValue("@last_name", request.last_name);
+            cmd.Parameters.AddWithValue("@email", request.email);
+            cmd.Parameters.AddWithValue("@phone", request.phone);
+            cmd.Parameters.AddWithValue("@active",request.active);
             // ✅ Store ID from ComboBox
             cmd.Parameters.AddWithValue("@store_id", Convert.ToInt32(request.store_id));
             // ✅ Manager ID from ComboBox

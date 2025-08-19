@@ -77,14 +77,8 @@ namespace POS_LEVEL_01.UserInterface
             staff.email = txtEmail.Text;
             staff.phone = txtPhone.Text;
 
-            if (cboStore.Text == "Active")
-            {
-                staff.staff_id = 1;
-            }
-            else if (cboStore.Text == "InActive")
-            {
-                staff.staff_id = 0;
-            }
+            // Set active from cboStatus
+            staff.active = (cboStatus.SelectedIndex == 0) ? 1 : 0;
             staff.store_id = Convert.ToInt32(cboStore.SelectedValue);
             staff.manager_id = Convert.ToInt32(cboManager.SelectedValue);
 
@@ -132,7 +126,11 @@ namespace POS_LEVEL_01.UserInterface
                 txtLName.Text = row.Cells["last_name"].Value.ToString();
                 txtEmail.Text = row.Cells["email"].Value.ToString();
                 txtPhone.Text = row.Cells["phone"].Value.ToString();
-                cboStatus.Text = row.Cells["active"].Value.ToString();
+
+                // Assuming cboStatus has two items: "Active" at index 0, "Inactive" at index 1
+                int activeValue = Convert.ToInt32(row.Cells["active"].Value);
+                cboStatus.SelectedIndex = (activeValue == 1) ? 0 : 1;
+
                 cboManager.Text = row.Cells["manager_name"].Value.ToString();
                 cboStore.Text = row.Cells["store_name"].Value.ToString();
             }
@@ -145,6 +143,31 @@ namespace POS_LEVEL_01.UserInterface
                 staffService.Delete(staff);
             }
             LoadData(); 
+        }
+
+        private void btnNew_Click(object sender, EventArgs e)
+        {
+            txtFName.Clear();
+            txtLName.Clear();
+            txtEmail.Clear();
+            txtPhone.Clear(); 
+            btnSave.Enabled = true;
+            btnSave.Text = "Save";
+            btnDelete.Enabled = false;
+            txtFName.Focus();
+        }
+
+        private void dgvStaff_CellFormatting(object sender, DataGridViewCellFormattingEventArgs e)
+        {
+            if (dgvStaff.Columns[e.ColumnIndex].Name == "active" && e.Value != null)
+            {
+                int activeValue;
+                if (int.TryParse(e.Value.ToString(), out activeValue))
+                {
+                    e.Value = (activeValue == 1) ? "Active" : "Inactive";
+                    e.FormattingApplied = true;
+                }
+            }
         }
     }
 }
