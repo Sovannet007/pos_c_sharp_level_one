@@ -35,7 +35,7 @@ namespace POS_LEVEL_01.UserInterface
             dgvStaff.AllowUserToAddRows = false;
             dgvStaff.RowHeadersVisible = false;
             dgvStaff.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCells;
-
+            dgvStaff.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
 
             //bind combobox data
             BindComboBox.BindData(cboManager, "select staff_id, first_name+' '+last_name as full_name from sales.staffs");
@@ -54,9 +54,97 @@ namespace POS_LEVEL_01.UserInterface
             dgvStaff.Rows.Clear();
             foreach(Staff staff in staffService.GetStaffs())
             {
-                dgvStaff.Rows.Add(staff.staff_id,staff.first_name,staff.last_name,staff.email,staff.phone, staff.active, staff.manager_name,staff.store_name);
+                dgvStaff.Rows.Add(staff.staff_id,staff.first_name,staff.last_name,staff.email,staff.phone, staff.active, staff.store_name,staff.manager_name);
             }
             dgvStaff.ClearSelection();
+        }
+
+        private void btnSave_Click(object sender, EventArgs e)
+        {
+            if (txtFName.Text.Trim() == "" || txtLName.Text.Trim() == "")
+            {
+                MessageHelper.WarningMessage("Please input staff first name and last name!");
+                return;
+            }if (txtEmail.Text.Trim()=="")
+            {
+                MessageHelper.WarningMessage("Please input staff email!");
+                return;
+            }
+
+            SqlTransactionHelper.transaction = ConnectionHelper.GetConnection().BeginTransaction();
+            staff.first_name = txtFName.Text;
+            staff.last_name = txtLName.Text;
+            staff.email = txtEmail.Text;
+            staff.phone = txtPhone.Text;
+
+            if (cboStore.Text == "Active")
+            {
+                staff.staff_id = 1;
+            }
+            else if (cboStore.Text == "InActive")
+            {
+                staff.staff_id = 0;
+            }
+            staff.store_id = Convert.ToInt32(cboStore.SelectedValue);
+            staff.manager_id = Convert.ToInt32(cboManager.SelectedValue);
+
+            if (btnSave.Text == "Save")
+            {
+                if (staffService.Insert(staff))
+                {
+                    SqlTransactionHelper.transaction.Commit();
+                    MessageHelper.SuccessMessage("Staff created!");
+                }
+                else
+                {
+                    SqlTransactionHelper.transaction.Rollback();
+                }
+            }
+
+            else
+            {
+                if (staffService.Update(staff))
+                {
+                    SqlTransactionHelper.transaction.Commit();
+                    MessageHelper.SuccessMessage("Staff updated!");
+                }
+                else
+                {
+                    SqlTransactionHelper.transaction.Rollback();
+                }
+            }
+
+            //refresh data
+            LoadData();
+        }
+
+        private void dgvStaff_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.RowIndex >= 0)
+            {
+                DataGridViewRow row = dgvStaff.Rows[e.RowIndex];
+
+                staff.staff_id = Convert.ToInt16(row.Cells["staff_id"].Value);
+                btnSave.Text = "Update";
+                btnSave.Enabled = true;
+                btnDelete.Enabled = true;
+                txtFName.Text = row.Cells["first_name"].Value.ToString();
+                txtLName.Text = row.Cells["last_name"].Value.ToString();
+                txtEmail.Text = row.Cells["email"].Value.ToString();
+                txtPhone.Text = row.Cells["phone"].Value.ToString();
+                cboStatus.Text = row.Cells["active"].Value.ToString();
+                cboManager.Text = row.Cells["manager_name"].Value.ToString();
+                cboStore.Text = row.Cells["store_name"].Value.ToString();
+            }
+        }
+
+        private void btnDelete_Click(object sender, EventArgs e)
+        {
+            if (MessageHelper.ConfirmMessage())
+            {
+                staffService.Delete(staff);
+            }
+            LoadData(); 
         }
     }
 }

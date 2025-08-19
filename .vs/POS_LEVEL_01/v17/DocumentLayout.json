@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "E:\\Desktop Application\\POS_LEVEL_01\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{07A1E5A2-3E84-4DB7-801D-0A2A98148D22}|POS_LEVEL_01.csproj|e:\\desktop application\\pos_level_01\\userinterface\\staffpage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{07A1E5A2-3E84-4DB7-801D-0A2A98148D22}|POS_LEVEL_01.csproj|solutionrelative:userinterface\\staffpage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{07A1E5A2-3E84-4DB7-801D-0A2A98148D22}|POS_LEVEL_01.csproj|E:\\Desktop Application\\POS_LEVEL_01\\userinterface\\staffpage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{07A1E5A2-3E84-4DB7-801D-0A2A98148D22}|POS_LEVEL_01.csproj|solutionrelative:userinterface\\staffpage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
@@ -11,24 +15,8 @@
       "RelativeMoniker": "D:0:0:{07A1E5A2-3E84-4DB7-801D-0A2A98148D22}|POS_LEVEL_01.csproj|solutionrelative:service\\staffservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{07A1E5A2-3E84-4DB7-801D-0A2A98148D22}|POS_LEVEL_01.csproj|e:\\desktop application\\pos_level_01\\model\\staff.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{07A1E5A2-3E84-4DB7-801D-0A2A98148D22}|POS_LEVEL_01.csproj|solutionrelative:model\\staff.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{07A1E5A2-3E84-4DB7-801D-0A2A98148D22}|POS_LEVEL_01.csproj|E:\\Desktop Application\\POS_LEVEL_01\\userinterface\\staffpage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{07A1E5A2-3E84-4DB7-801D-0A2A98148D22}|POS_LEVEL_01.csproj|solutionrelative:userinterface\\staffpage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{07A1E5A2-3E84-4DB7-801D-0A2A98148D22}|POS_LEVEL_01.csproj|E:\\Desktop Application\\POS_LEVEL_01\\userinterface\\brandpage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{07A1E5A2-3E84-4DB7-801D-0A2A98148D22}|POS_LEVEL_01.csproj|e:\\desktop application\\pos_level_01\\userinterface\\brandpage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{07A1E5A2-3E84-4DB7-801D-0A2A98148D22}|POS_LEVEL_01.csproj|solutionrelative:userinterface\\brandpage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{07A1E5A2-3E84-4DB7-801D-0A2A98148D22}|POS_LEVEL_01.csproj|E:\\Desktop Application\\POS_LEVEL_01\\userinterface\\orderpage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{07A1E5A2-3E84-4DB7-801D-0A2A98148D22}|POS_LEVEL_01.csproj|solutionrelative:userinterface\\orderpage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{07A1E5A2-3E84-4DB7-801D-0A2A98148D22}|POS_LEVEL_01.csproj|e:\\desktop application\\pos_level_01\\service\\brandservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{07A1E5A2-3E84-4DB7-801D-0A2A98148D22}|POS_LEVEL_01.csproj|solutionrelative:service\\brandservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -38,63 +26,50 @@
       "DocumentGroups": [
         {
           "DockedWidth": 227,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "Staff.cs",
-              "DocumentMoniker": "E:\\Desktop Application\\POS_LEVEL_01\\Model\\Staff.cs",
-              "RelativeDocumentMoniker": "Model\\Staff.cs",
-              "ToolTip": "E:\\Desktop Application\\POS_LEVEL_01\\Model\\Staff.cs",
-              "RelativeToolTip": "Model\\Staff.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAASAAAAAAAAAA==",
+              "Title": "StaffService.cs",
+              "DocumentMoniker": "E:\\Desktop Application\\POS_LEVEL_01\\Service\\StaffService.cs",
+              "RelativeDocumentMoniker": "Service\\StaffService.cs",
+              "ToolTip": "E:\\Desktop Application\\POS_LEVEL_01\\Service\\StaffService.cs",
+              "RelativeToolTip": "Service\\StaffService.cs",
+              "ViewState": "AgIAABkAAAAAAAAAAAAQwCIAAABVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-19T06:25:56.263Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "BrandService.cs",
-              "DocumentMoniker": "E:\\Desktop Application\\POS_LEVEL_01\\Service\\BrandService.cs",
-              "RelativeDocumentMoniker": "Service\\BrandService.cs",
-              "ToolTip": "E:\\Desktop Application\\POS_LEVEL_01\\Service\\BrandService.cs",
-              "RelativeToolTip": "Service\\BrandService.cs",
-              "ViewState": "AgIAABAAAAAAAAAAAAAzwCgAAABPAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-19T05:25:29.994Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "BrandPage.cs",
-              "DocumentMoniker": "E:\\Desktop Application\\POS_LEVEL_01\\UserInterface\\BrandPage.cs",
-              "RelativeDocumentMoniker": "UserInterface\\BrandPage.cs",
-              "ToolTip": "E:\\Desktop Application\\POS_LEVEL_01\\UserInterface\\BrandPage.cs",
-              "RelativeToolTip": "UserInterface\\BrandPage.cs",
-              "ViewState": "AgIAAEQAAAAAAAAAAAAgwCcAAAAiAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-18T17:21:57.536Z",
+              "WhenOpened": "2025-08-19T08:50:03.489Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "StaffPage.cs",
-              "DocumentMoniker": "E:\\Desktop Application\\POS_LEVEL_01\\UserInterface\\StaffPage.cs",
-              "RelativeDocumentMoniker": "UserInterface\\StaffPage.cs",
-              "ToolTip": "E:\\Desktop Application\\POS_LEVEL_01\\UserInterface\\StaffPage.cs",
-              "RelativeToolTip": "UserInterface\\StaffPage.cs",
-              "ViewState": "AgIAABkAAAAAAAAAAAAQwDgAAAB3AAAAAAAAAA==",
+              "Title": "BrandPage.cs",
+              "DocumentMoniker": "E:\\Desktop Application\\POS_LEVEL_01\\UserInterface\\BrandPage.cs",
+              "RelativeDocumentMoniker": "UserInterface\\BrandPage.cs",
+              "ToolTip": "E:\\Desktop Application\\POS_LEVEL_01\\UserInterface\\BrandPage.cs",
+              "RelativeToolTip": "UserInterface\\BrandPage.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAHcAAAAcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-18T17:03:35.353Z",
+              "WhenOpened": "2025-08-19T08:42:34.845Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "StaffPage.cs",
+              "DocumentMoniker": "E:\\Desktop Application\\POS_LEVEL_01\\UserInterface\\StaffPage.cs",
+              "RelativeDocumentMoniker": "UserInterface\\StaffPage.cs",
+              "ToolTip": "E:\\Desktop Application\\POS_LEVEL_01\\UserInterface\\StaffPage.cs",
+              "RelativeToolTip": "UserInterface\\StaffPage.cs",
+              "ViewState": "AgIAADMAAAAAAAAAAADgvzgAAACcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-19T08:42:18.04Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "StaffPage.cs [Design]",
               "DocumentMoniker": "E:\\Desktop Application\\POS_LEVEL_01\\UserInterface\\StaffPage.cs",
               "RelativeDocumentMoniker": "UserInterface\\StaffPage.cs",
@@ -102,31 +77,6 @@
               "RelativeToolTip": "UserInterface\\StaffPage.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-08-18T16:21:13.732Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "StaffService.cs",
-              "DocumentMoniker": "E:\\Desktop Application\\POS_LEVEL_01\\Service\\StaffService.cs",
-              "RelativeDocumentMoniker": "Service\\StaffService.cs",
-              "ToolTip": "E:\\Desktop Application\\POS_LEVEL_01\\Service\\StaffService.cs",
-              "RelativeToolTip": "Service\\StaffService.cs",
-              "ViewState": "AgIAABQAAAAAAAAAAAAAwCcAAAA/AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-18T15:52:14.746Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "OrderPage.cs [Design]",
-              "DocumentMoniker": "E:\\Desktop Application\\POS_LEVEL_01\\UserInterface\\OrderPage.cs",
-              "RelativeDocumentMoniker": "UserInterface\\OrderPage.cs",
-              "ToolTip": "E:\\Desktop Application\\POS_LEVEL_01\\UserInterface\\OrderPage.cs [Design]",
-              "RelativeToolTip": "UserInterface\\OrderPage.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-16T03:14:21.703Z",
               "EditorCaption": " [Design]"
             }
           ]

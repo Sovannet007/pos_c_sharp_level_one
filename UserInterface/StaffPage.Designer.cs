@@ -85,6 +85,7 @@
             this.btnDelete.TabIndex = 11;
             this.btnDelete.Text = "Delete";
             this.btnDelete.UseVisualStyleBackColor = false;
+            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
             // 
             // btnSave
             // 
@@ -95,6 +96,7 @@
             this.btnSave.TabIndex = 12;
             this.btnSave.Text = "Save";
             this.btnSave.UseVisualStyleBackColor = false;
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
             // btnNew
             // 
@@ -114,6 +116,7 @@
             this.dgvStaff.RowTemplate.Height = 24;
             this.dgvStaff.Size = new System.Drawing.Size(882, 470);
             this.dgvStaff.TabIndex = 10;
+            this.dgvStaff.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvStaff_CellClick);
             // 
             // label3
             // 
@@ -148,6 +151,9 @@
             this.cboStatus.Font = new System.Drawing.Font("Myanmar Sans Pro", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cboStatus.FormattingEnabled = true;
             this.cboStatus.ItemHeight = 22;
+            this.cboStatus.Items.AddRange(new object[] {
+            "Active",
+            "InActive"});
             this.cboStatus.Location = new System.Drawing.Point(135, 318);
             this.cboStatus.Name = "cboStatus";
             this.cboStatus.Size = new System.Drawing.Size(238, 30);
@@ -251,6 +257,8 @@
             this.cboStore.Font = new System.Drawing.Font("Myanmar Sans Pro", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cboStore.FormattingEnabled = true;
             this.cboStore.ItemHeight = 22;
+            this.cboStore.Items.AddRange(new object[] {
+            "Null"});
             this.cboStore.Location = new System.Drawing.Point(135, 368);
             this.cboStore.Name = "cboStore";
             this.cboStore.Size = new System.Drawing.Size(238, 30);
@@ -261,6 +269,8 @@
             this.cboManager.Font = new System.Drawing.Font("Myanmar Sans Pro", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cboManager.FormattingEnabled = true;
             this.cboManager.ItemHeight = 22;
+            this.cboManager.Items.AddRange(new object[] {
+            "Null"});
             this.cboManager.Location = new System.Drawing.Point(135, 422);
             this.cboManager.Name = "cboManager";
             this.cboManager.Size = new System.Drawing.Size(238, 30);
