@@ -1,0 +1,15 @@
+E:\Desktop Application\POS_LEVEL_01\bin\Debug\POS_LEVEL_01.exe.config
+E:\Desktop Application\POS_LEVEL_01\bin\Debug\POS_LEVEL_01.exe
+E:\Desktop Application\POS_LEVEL_01\bin\Debug\POS_LEVEL_01.pdb
+E:\Desktop Application\POS_LEVEL_01\obj\Debug\POS_LEVEL_01.csproj.AssemblyReference.cache
+E:\Desktop Application\POS_LEVEL_01\obj\Debug\POS_LEVEL_01.MainForm.resources
+E:\Desktop Application\POS_LEVEL_01\obj\Debug\POS_LEVEL_01.Properties.Resources.resources
+E:\Desktop Application\POS_LEVEL_01\obj\Debug\POS_LEVEL_01.csproj.GenerateResource.cache
+E:\Desktop Application\POS_LEVEL_01\obj\Debug\POS_LEVEL_01.csproj.CoreCompileInputs.cache
+E:\Desktop Application\POS_LEVEL_01\obj\Debug\POS_LEVEL_01.exe
+E:\Desktop Application\POS_LEVEL_01\obj\Debug\POS_LEVEL_01.pdb
+E:\Desktop Application\POS_LEVEL_01\obj\Debug\POS_LEVEL_01.UserInterface.HomePage.resources
+E:\Desktop Application\POS_LEVEL_01\obj\Debug\POS_LEVEL_01.UserInterface.BrandPage.resources
+E:\Desktop Application\POS_LEVEL_01\obj\Debug\POS_LEVEL_01.UserInterface.OrderPage.resources
+E:\Desktop Application\POS_LEVEL_01\obj\Debug\POS_LEVEL_01.UserInterface.CategoryPage.resources
+E:\Desktop Application\POS_LEVEL_01\obj\Debug\POS_LEVEL_01.UserInterface.StaffPage.resources
